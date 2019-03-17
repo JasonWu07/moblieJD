@@ -1,0 +1,64 @@
+/**
+ * 公共样式
+ */
+
+/*1.样式重置*/
+html,body,ul,li,span,div,a,p,h1,h2,h3,h4,h5,h6,img,input,form{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	/*去除移动端的点击高亮效果*/
+	-webkit-tap-highlight-color: transparent;
+}
+body{
+	font-family: "微软雅黑",sans-serif;
+	font-size:13px;
+}
+a,a:hover{
+	text-decoration: none;
+	color:#666;
+}
+ul{
+	list-style:none;
+}
+input{
+	/*1.先清除文本框获取焦点时的边框*/
+	outline:none;
+	/*2.清除边框*/
+	border:none;
+	/*3.添加边框*/
+	border:1px solid #ccc;
+}
+/*2.添加新的样式*/
+.f_left{
+	float:left;
+}
+.f_right{
+	float:right;
+}
+.b_left{
+	border-left:1px solid #ccc;
+}
+.b_right{
+	border-right:1px solid #ccc;
+}
+.b_bottom{
+	border-bottom:1px solid #ccc;
+}
+.m_left10{
+	margin-left: 10px;
+}
+.m_right10{
+	margin-right: 10px;
+}
+/*清除浮动*/
+.clearfix:before,.clearfix:after { 
+  content:"";
+  display:table;  /* 这句话可以出发BFC BFC可以清除浮动,BFC我们后面讲 */
+}
+.clearfix:after {
+ clear:both;
+}
+.clearfix {
+  *zoom:1;
+}
